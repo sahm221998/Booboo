@@ -2,53 +2,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Booboo - Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Booboo Live Tiles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #F1F3F5;
-      color: #222;
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      padding: 80px 20px 60px;
-      position: relative;
-      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #2e3a4e;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
     }
-    h1 {
-      font-size: 2.4rem;
-      color: #2F343F;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 500px;
-      margin: 0 auto 30px;
-      color: #444;
-    }
-    .button {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #253237;
-      color: #fff;
+    .tile {
+      width: 90%;
+      max-width: 360px;
+      margin: 12px 0;
       border-radius: 12px;
-      font-weight: 600;
-      text-decoration: none;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-    footer {
-      position: absolute;
-      bottom: 10px;
+    .tile img {
       width: 100%;
-      font-size: 0.9rem;
-      color: #999;
+      height: auto;
+      display: block;
+    }
+    .tile-label {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 10px;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
-  <h1>Booboo - Coming Soon</h1>
-  <p>Reinventing long-distance love — with reminders, games, and shared emotions, all in one place.</p>
-  <a href="#" class="button">Get Notified</a>
-  <footer>© 2025 Booboo. All rights reserved.</footer>
+  <div class="tile">
+    <img src="https://i.imgur.com/hR9vV3J.png" alt="Reminders">
+    <div class="tile-label">Reminders</div>
+  </div>
+  <div class="tile">
+    <img src="https://i.imgur.com/guMk9Lf.png" alt="Games">
+    <div class="tile-label">Fun Games</div>
+  </div>
+  <div class="tile">
+    <img src="https://i.imgur.com/WuIsGGE.jpg" alt="Moments">
+    <div class="tile-label">Moments</div>
+  </div>
+  <div class="tile">
+    <img src="https://i.imgur.com/7vYrYi8.png" alt="Communication">
+    <div class="tile-label">Communication</div>
+  </div>
+  <div class="tile">
+    <img src="https://i.imgur.com/MeVAdMQ.jpg" alt="Cookbook">
+    <div class="tile-label">Cookbook</div>
+  </div>
 </body>
 </html>
